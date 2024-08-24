@@ -108,5 +108,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -la'
 
+if [ ! -z $(which kubectl |grep -v "not") ]; then
+    alias k="kubectl"
+    alias kube-all="kubectl get pv,pvc,pods,deployments,secrets,storageclass,namespaces,services,ingress -A"
+    alias kube="kubectl get pv,pvc,pods,deployments,secrets,storageclass,services,ingress"
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
