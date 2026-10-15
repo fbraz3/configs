@@ -3,7 +3,7 @@
 ! Description: This list ublock my personal stuff
 ! Version: 1.0.15.45
 ! Homepage: https://braz.dev
-! Last modified: 2026-10-15T16:33:41.008Z
+! Last modified: 2026-10-15T18:53:41.008Z
 !
 ! Compiled by @fbraz3
 !
@@ -12,3 +12,4 @@
 @@||clients2.google.com^
 @@||clients3.google.com^
 @@||s.youtube.com^
+@@||*.honeygain.com^
